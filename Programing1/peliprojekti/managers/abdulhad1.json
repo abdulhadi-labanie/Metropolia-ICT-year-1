@@ -1,0 +1,173 @@
+{
+    "user_name": "abdulhad1",
+    "age": 22,
+    "career": [
+        {
+            "company_name": "Eagle-airline",
+            "country": "Finland",
+            "hub_airport": "HEL",
+            "company_budget": 176193787,
+            "is_active": true,
+            "fleet_count": 3,
+            "years": {
+                "2026": {
+                    "planes": [
+                        {
+                            "specs": {
+                                "aircraft_ID": "010-1",
+                                "manufacturer": "Airbus",
+                                "model": "A321neo",
+                                "required_crew": 7,
+                                "passengers_capacity": 240,
+                                "ticket_price": 25.0,
+                                "optimal_range_km": 1900,
+                                "financials": {
+                                    "price": 129500000,
+                                    "annual_maintenance_cost": 950000,
+                                    "daily_operating_cost": 3000,
+                                    "daily_net_profit": 12000
+                                },
+                                "operations_24h": {
+                                    "flights_per_24h": 2
+                                },
+                                "environmental_impact": {
+                                    "co2_emissions_per_km": 5.2,
+                                    "co2_rating": 9.8
+                                }
+                            },
+                            "stats": {
+                                "total_flights": 1723,
+                                "failed_landings": 9,
+                                "total_passengers_capacity": 404905,
+                                "net_profit": 8077625,
+                                "total_co2_emissions_tonnes": 18815.16,
+                                "supported_airports": [
+                                    "TKU",
+                                    "TMP",
+                                    "OUL",
+                                    "RVN",
+                                    "KTT",
+                                    "TLL",
+                                    "RIX",
+                                    "ARN",
+                                    "VNO",
+                                    "OSL",
+                                    "LHR",
+                                    "CDG"
+                                ],
+                                "airline_selected": "LHR",
+                                "total_plane_co2_rating": 43.8,
+                                "total_profit_rating": 97.4
+                            }
+                        },
+                        {
+                            "specs": {
+                                "aircraft_ID": "005-2",
+                                "manufacturer": "Airbus",
+                                "model": "A380-800",
+                                "required_crew": 21,
+                                "passengers_capacity": 525,
+                                "ticket_price": 46.0,
+                                "optimal_range_km": 6500,
+                                "financials": {
+                                    "price": 445600000,
+                                    "annual_maintenance_cost": 6000000,
+                                    "daily_operating_cost": 15000,
+                                    "daily_net_profit": 29000
+                                },
+                                "operations_24h": {
+                                    "flights_per_24h": 1
+                                },
+                                "environmental_impact": {
+                                    "co2_emissions_per_km": 22.0,
+                                    "co2_rating": 7.9
+                                }
+                            },
+                            "stats": {
+                                "total_flights": 1723,
+                                "failed_landings": 12,
+                                "total_passengers_capacity": 795972,
+                                "net_profit": 25139712,
+                                "total_co2_emissions_tonnes": 79602.6,
+                                "supported_airports": [
+                                    "TKU",
+                                    "TMP",
+                                    "OUL",
+                                    "RVN",
+                                    "KTT",
+                                    "TLL",
+                                    "RIX",
+                                    "ARN",
+                                    "VNO",
+                                    "OSL",
+                                    "LHR",
+                                    "CDG",
+                                    "IST",
+                                    "CAI",
+                                    "RUH",
+                                    "DXB",
+                                    "PEK"
+                                ],
+                                "airline_selected": "LHR",
+                                "total_plane_co2_rating": 40.0,
+                                "total_profit_rating": 83.4
+                            }
+                        },
+                        {
+                            "specs": {
+                                "aircraft_ID": "007-3",
+                                "manufacturer": "Airbus",
+                                "model": "A350-900",
+                                "required_crew": 11,
+                                "passengers_capacity": 325,
+                                "ticket_price": 50.0,
+                                "optimal_range_km": 4900,
+                                "financials": {
+                                    "price": 317400000,
+                                    "annual_maintenance_cost": 1900000,
+                                    "daily_operating_cost": 6000,
+                                    "daily_net_profit": 23000
+                                },
+                                "operations_24h": {
+                                    "flights_per_24h": 1
+                                },
+                                "environmental_impact": {
+                                    "co2_emissions_per_km": 9.0,
+                                    "co2_rating": 8.6
+                                }
+                            },
+                            "stats": {
+                                "total_flights": 2766,
+                                "failed_landings": 28,
+                                "total_passengers_capacity": 791329,
+                                "net_profit": 35476450,
+                                "total_co2_emissions_tonnes": 23649.3,
+                                "supported_airports": [
+                                    "TKU",
+                                    "TMP",
+                                    "OUL",
+                                    "RVN",
+                                    "KTT",
+                                    "TLL",
+                                    "RIX",
+                                    "ARN",
+                                    "VNO",
+                                    "OSL",
+                                    "LHR",
+                                    "CDG",
+                                    "IST",
+                                    "CAI",
+                                    "RUH",
+                                    "DXB"
+                                ],
+                                "airline_selected": "RVN",
+                                "total_plane_co2_rating": 40.0,
+                                "total_profit_rating": 86.8
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

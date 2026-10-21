@@ -257,7 +257,7 @@ def calculate_single_flight_passengers(passengers_capacity: int, optimal_range_k
 def calculate_annual_net_profit(total_passengers_capacity: int, plane: clsPlane) -> float:
     annual_operating_cost = plane.daily_operating_cost * 365.0
     total_net_profit = (plane.ticket_price * total_passengers_capacity) - (plane.annual_maintenance_cost + annual_operating_cost)
-    return round(total_net_profit / 65)
+    return round(total_net_profit)
 
 def calculate_annual_co2_icao(annual_flights: int, flight_distance_km: float, co2_emissions_per_km: float) -> float:
     cruise_fuel_per_km = co2_emissions_per_km / 3.16
@@ -282,8 +282,8 @@ def calculate_company_co2_rating(base_co2_rating: float, flight_distance_km: flo
 
     if final_rating > 100.0:
         final_rating = 100.0
-    elif final_rating < 0.0:
-        final_rating = 0.0
+    elif final_rating < 40.0:
+        final_rating = 40.0
     return round(final_rating, 1)
 
 def calculate_expected_flight_passengers(total_year_flights: int, passengers_capacity: int, optimal_range_km: float, airport_data: dict) -> int:
@@ -297,7 +297,7 @@ def calculate_company_profit_rating(plane: clsPlane, annual_net_profit: float, t
     max_annual_revenue = max_annual_passengers * plane.ticket_price
     
     total_annual_costs = plane.annual_maintenance_cost + (plane.daily_operating_cost * 365.0)
-    max_annual_profit = (max_annual_revenue - total_annual_costs) / 65.0
+    max_annual_profit = (max_annual_revenue - total_annual_costs)
     
     if max_annual_profit <= 0.0:
         return 0.0
