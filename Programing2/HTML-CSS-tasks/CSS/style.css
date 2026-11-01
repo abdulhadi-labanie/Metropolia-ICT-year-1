@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
 }
 
 body {
@@ -158,7 +158,7 @@ main p {
 
 .produst-title {
     font-style: italic;
-    color: #efab0e;
+    color: #000000;
     font-size: 15px;
     margin-bottom: 10px;
     text-align: left !important;
