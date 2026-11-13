@@ -26,12 +26,33 @@ function task1_3()
 
 
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function task1_4()
 {
+    const name = prompt("Enter enter your name: ");
 
+    const number = getRandomArbitrary(1,4);
+
+    switch (number)
+    {
+        case 1:
+            document.querySelector("#target1_4").innerHTML = "Hello, " + name + ", You are Gryffindor"
+            break;
+        case 2:
+            document.querySelector("#target1_4").innerHTML = "Hello, " + name + ", You are Slytherin"
+            break;
+        case 3:
+            document.querySelector("#target1_4").innerHTML = "Hello, " + name + ", You are Hufflepuff"
+            break;
+        case 4:
+            document.querySelector("#target1_4").innerHTML = "Hello, " + name + ", You are Ravenclaw"
+            break;
+
+        default:
+            console.log("Invalid cabin class.");        
+    }
 }
 
 
@@ -40,3 +61,5 @@ document.querySelector("#button1").addEventListener("click", task1_1);
 document.querySelector("#button2").addEventListener("click", task1_2);
 
 document.querySelector("#button3").addEventListener("click", task1_3);
+
+document.querySelector("#button4").addEventListener("click", task1_4);
