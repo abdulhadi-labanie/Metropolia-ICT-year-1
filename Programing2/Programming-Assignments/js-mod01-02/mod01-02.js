@@ -86,6 +86,37 @@ function task1_5() {
 }
 
 
+function task1_6() {
+    const answer = confirm("Should I calculate the square root?");
+
+    if (answer) {
+        const number = prompt("Enter your number :");
+
+        if(number <= 0)
+        {
+            document.querySelector("#target1_6").innerHTML =
+            "The square root of a negative number " + number + " is not defined";
+        }
+        else if (number > 0)
+        {
+            const result = Math.sqrt(number);
+
+            document.querySelector("#target1_6").innerHTML =
+                "The square root of " + number + " is " + result;
+        }
+        else{
+            document.querySelector("#target1_6").innerHTML =
+            "[!] The square root of a number " + number + " is not defined";
+        }
+
+    }
+    else {
+        document.querySelector("#target1_6").innerHTML =
+            year + " is not a leap year.";
+    }
+}
+
+
 document.querySelector("#button1").addEventListener("click", task1_1);
 
 document.querySelector("#button2").addEventListener("click", task1_2);
@@ -95,3 +126,9 @@ document.querySelector("#button3").addEventListener("click", task1_3);
 document.querySelector("#button4").addEventListener("click", task1_4);
 
 document.querySelector("#button5").addEventListener("click", task1_5);
+
+document.querySelector("#button6").addEventListener("click", task1_6);
+
+document.querySelector("#button7").addEventListener("click", task1_7);
+
+document.querySelector("#button8").addEventListener("click", task1_8);
